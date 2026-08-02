@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Autor - MK - LN's</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">MK - LN's</h1>
+            <p class="subtitle">Painel do Autor — Gerencie suas histórias e capítulos</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <div style="margin-bottom: 20px;">
+            <a href="index.html" class="contact-btn" style="display: inline-block;">← Voltar para o Início</a>
+        </div>
+
+        <section class="intro-card">
+            <h2>📖 Criar Nova Light Novel</h2>
+            <p>Preencha os dados abaixo para publicar uma nova obra na plataforma:</p>
+            <br>
+            
+            <form action="#" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+                <div>
+                    <label for="titulo-obra" style="font-weight: 700; display: block; margin-bottom: 5px;">Título da Light Novel:</label>
+                    <input type="text" id="titulo-obra" name="titulo" placeholder="Ex: Meritocracia Mágica" required style="width: 100%; padding: 12px; border-radius: 8px; border: 2px solid #ffe0b2; font-size: 1rem;">
+                </div>
+
+                <div>
+                    <label for="sinopse-obra" style="font-weight: 700; display: block; margin-bottom: 5px;">Sinopse / Premissa:</label>
+                    <textarea id="sinopse-obra" name="sinopse" rows="4" placeholder="Conte resumidamente sobre a sua história..." required style="width: 100%; padding: 12px; border-radius: 8px; border: 2px solid #ffe0b2; font-size: 1rem; font-family: inherit;"></textarea>
+                </div>
+
+                <div>
+                    <label for="capa-url" style="font-weight: 700; display: block; margin-bottom: 5px;">Link da Imagem de Capa (URL):</label>
+                    <input type="url" id="capa-url" name="capa_url" placeholder="https://exemplo.com/imagem.jpg" style="width: 100%; padding: 12px; border-radius: 8px; border: 2px solid #ffe0b2; font-size: 1rem;">
+                </div>
+
+                <button type="submit" class="contact-btn" style="cursor: pointer; font-size: 1rem; border: none; align-self: flex-start;">Publicar Obra</button>
+            </form>
+        </section>
+
+        <section class="intro-card">
+            <h2>✍️ Adicionar Novo Capítulo</h2>
+            <p>Escreva e publique um novo capítulo para uma de suas obras:</p>
+            <br>
+            
+            <form action="#" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+                <div>
+                    <label for="select-obra" style="font-weight: 700; display: block; margin-bottom: 5px;">Selecione a Obra:</label>
+                    <select id="select-obra" name="obra_id" required style="width: 100%; padding: 12px; border-radius: 8px; border: 2px solid #ffe0b2; font-size: 1rem; background-color: #fff;">
+                        <option value="">-- Escolha uma história --</option>
+                        <option value="1">Meritocracia Mágica: O Sem Magia e o Novo Mundo</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="num-capitulo" style="font-weight: 700; display: block; margin-bottom: 5px;">Número do Capítulo:</label>
+                    <input type="number" id="num-capitulo" name="numero" placeholder="Ex: 1" min="1" required style="width: 100%; padding: 12px; border-radius: 8px; border: 2px solid #ffe0b2; font-size: 1rem;">
+                </div>
+
+                <div>
+                    <label for="titulo-capitulo" style="font-weight: 700; display: block; margin-bottom: 5px;">Título do Capítulo:</label>
+                    <input type="text" id="titulo-capitulo" name="titulo_capitulo" placeholder="Ex: O Conhecimento Sem Poder" required style="width: 100%; padding: 12px; border-radius: 8px; border: 2px solid #ffe0b2; font-size: 1rem;">
+                </div>
+
+                <div>
+                    <label for="conteudo-capitulo" style="font-weight: 700; display: block; margin-bottom: 5px;">Conteúdo do Capítulo (Texto):</label>
+                    <textarea id="conteudo-capitulo" name="conteudo" rows="10" placeholder="Escreva o texto do capítulo aqui..." required style="width: 100%; padding: 12px; border-radius: 8px; border: 2px solid #ffe0b2; font-size: 1rem; font-family: inherit;"></textarea>
+                </div>
+
+                <button type="submit" class="contact-btn" style="cursor: pointer; font-size: 1rem; border: none; align-self: flex-start;">Publicar Capítulo</button>
+            </form>
+        </section>
+
+        <section class="intro-card">
+            <h2>📚 Minhas Light Novels</h2>
+            <p>Gerencie suas obras já cadastradas:</p>
+            <br>
+
+            <div style="padding: 15px; border-radius: 8px; background-color: #fff8f0; border: 1px solid #ffe0b2; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                <div>
+                    <strong>Meritocracia Mágica: O Sem Magia e o Novo Mundo</strong>
+                    <p style="font-size: 0.9rem; color: #666; margin-top: 4px;">Status: Em andamento | Capítulos: 2</p>
+                </div>
+                <div style="display: flex; gap: 10px;">
+                    <a href="#" class="contact-btn" style="font-size: 0.85rem; padding: 8px 12px;">Editar</a>
+                    <a href="#" class="contact-btn" style="font-size: 0.85rem; padding: 8px 12px; background: #e74c3c;">Excluir</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="copyright-section">
+                <p>&copy; 2026 <strong>MK - LN's</strong>. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

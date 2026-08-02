@@ -1,0 +1,240 @@
+/* Reset básico e tipografia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fffaf0;
+    color: #2d3748;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Cabeçalho */
+.header {
+    background: linear-gradient(135deg, #ff9800 0%, #ff5722 100%);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 10px 20px rgba(255, 87, 34, 0.2);
+    margin-bottom: 40px;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+/* Card de introdução */
+.intro-card {
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 2px solid #ffe0b2;
+    margin-bottom: 30px;
+}
+
+.intro-card h2 {
+    color: #e65100;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.intro-card p {
+    font-size: 1.1rem;
+    color: #4a5568;
+}
+
+/* Card da Light Novel em destaque */
+.featured-ln {
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(255, 152, 0, 0.15);
+    border: 2px solid #ffb74d;
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.badge {
+    background-color: #ffe0b2;
+    color: #e65100;
+    font-weight: 700;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.ln-title {
+    font-size: 2rem;
+    color: #1a202c;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.synopsis-box {
+    background-color: #fff8e1;
+    border-left: 5px solid #ff9800;
+    padding: 20px;
+    border-radius: 0 12px 12px 0;
+    margin-bottom: 25px;
+}
+
+.synopsis-box h4 {
+    color: #f57c00;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+/* Seção de contato e Botões Gerais */
+.contact-section {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid #ffe0b2;
+    margin-bottom: 40px;
+}
+
+.contact-section h3 {
+    margin-bottom: 20px;
+    color: #2d3748;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* ESTILO DOS BOTÕES (CORRIGIDO) */
+.contact-btn {
+    text-decoration: none;
+    background-color: #ff9800; /* Laranja padrão para os botões */
+    color: #ffffff !important;   /* Texto branco sempre visível */
+    font-weight: 700;
+    padding: 12px 24px;
+    border-radius: 12px;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Garante que os 3 botões fiquem lado a lado e bem espaçados */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Espaçamento entre os botões */
+    flex-wrap: wrap; /* Ajusta para telas menores */
+    margin-top: 20px;
+}
+
+/* Estilo do botão Ler Light Novels */
+.btn-success {
+    background-color: #28a745;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.contact-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 152, 0, 0.4);
+    background-color: #e65100;
+}
+
+/* Variações de cores específicas para botões */
+.btn-green {
+    background-color: #27ae60 !important;
+}
+
+.btn-green:hover {
+    background-color: #219150 !important;
+}
+
+.btn-red {
+    background-color: #e74c3c !important;
+}
+
+.btn-red:hover {
+    background-color: #c0392b !important;
+}
+
+.e-mail {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) !important;
+}
+
+
+.instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) !important;
+}
+
+.tiktok {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) !important;
+}
+
+/* Botões do Índice de Capítulos */
+.chapter-btn {
+    background-color: #fff3e0;
+    color: #e65100 !important;
+    border: 2px solid #ffe0b2;
+    padding: 14px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.chapter-btn:hover {
+    background-color: #ff9800;
+    color: #ffffff !important;
+    transform: translateX(5px);
+}
+
+/* Rodapé Preto */
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 30px 0;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.copyright-section p {
+    color: #ffffff;
+}
